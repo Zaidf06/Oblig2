@@ -25,6 +25,8 @@
     <input type="submit" value="Registrer student" id="regStudentKnapp" name="regStudentKnapp">
     <input type="reset" value="Nullstill" id="nullstill" name="nullstill">
 </form>
+
+
 <?php
 if (isset($_POST ["regStudentKnapp"])) {
 
@@ -33,7 +35,7 @@ if (isset($_POST ["regStudentKnapp"])) {
     $etternavn=$_POST ["etternavn"];
     $klassekode=$_POST ["klassekode"];
 
-    if (!$brukernavn  !$fornavn  !$etternavn || !$klassekode) {
+    if (!$brukernavn || !$fornavn || !$etternavn || !$klassekode) {
         print ("oops! Alle felt må fylles ut!");
     } 
     else
