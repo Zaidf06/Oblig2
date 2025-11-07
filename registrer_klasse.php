@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<?php /* oblig2/registrer_klasse.php /
+<?php /* oblig2/registrer_klasse.php */
 /*
 /Programmet lager et html-skjema for registrering av ny klasse i databasen
 /Programmet registrerer klassen når skjema er sendt inn
@@ -54,6 +54,7 @@ print ("F&oslash;lgende klasse er n&aring; registrert: $klassekode $klassenavn $
 }
 
 ?>
+
 
 
 
