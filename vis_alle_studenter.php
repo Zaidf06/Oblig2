@@ -6,7 +6,7 @@
 include ('db.php'); /* tilkobling til database-server utført og valg av database foretatt */
 
 
-$sqlSetning = "SELECT FROM student;";
+$sqlSetning = "SELECT * FROM student;";
 $sqlResultat = mysqli_query($db, $sqlSetning) or die ("Ikke mulig å hente data fra databasen");
 /* SQL-setning sendt til database-serveren */
 $sqlantallRader = mysqli_num_rows($sqlResultat); /* antall rader i resultatet beregnet */
@@ -29,3 +29,4 @@ for ($r = 1; $r <= $sqlantallRader; $r++)
 
 print "</table>";
 ?>
+
