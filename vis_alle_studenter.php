@@ -1,9 +1,9 @@
 <?php /* oblig2/vis_alle_studenter.php */
-/
+/*
 /*Programmet skriver ut alle registrerte studenter
 */
 
-include ("db.php"); / tilkobling til database-server utført og valg av database foretatt /
+include ('db.php'); /* tilkobling til database-server utført og valg av database foretatt */
 
 
 $sqlSetning = "SELECT FROM student;";
